@@ -1,0 +1,20 @@
+{
+  "name": "postcss-web-prefixer",
+  "version": "0.0.1",
+  "description": "PostCSS plugin to prefix keyframes and fontfaces",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin"
+  ],
+  "author": "Michael Herbst <michiherbst1995@gmail.com>",
+  "license": "MIT",
+  "repository": "michiherbst/postcss-web-prefixer",
+  "bugs": {
+    "url": "https://github.com/michiherbst/postcss-web-prefixer/issues"
+  },
+  "homepage": "https://github.com/michiherbst/postcss-web-prefixer",
+  "dependencies": {
+    "postcss": "^5.0.10"
+  }
+}
