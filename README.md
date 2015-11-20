@@ -1,6 +1,6 @@
-# PostCSS Web Prefixer
+# PostCSS Prefixer Keyframes
 
-[PostCSS] plugin to prefix keyframes and font-faces.
+[PostCSS] plugin to prefix keyframes.
 
 [PostCSS]: https://github.com/postcss/postcss
 
@@ -11,23 +11,17 @@
   to {top: 200px;}
 }
 
-@font-face {
-  font-family: MyWebFont;
-}
-
 div {
   width: 100px;
   background: red;
   position: relative;
   animation: mymove 5s infinite;
-  font-family: Arial;
 }
 
 a {
   color: green;
   position: relative;
   animation: externalanimation 5s infinite;
-  font-family: MyWebFont;
 }
 
 ```
@@ -39,29 +33,24 @@ a {
     to {top: 200px;}
 }
 
-@font-face {
-    font-family: myWebsite-MyWebFont;
-}
-
 div {
     width: 100px;
     background: red;
     position: relative;
     animation: myWebsite-mymove 5s infinite;
-    font-family: Arial;
 }
 
 a {
     color: green;
     position: relative;
     animation: externalanimation 5s infinite;
-    font-family: myWebsite-MyWebFont;
 }
 ```
 
 ## Usage
 
 ```js
+var prefix = require('postcss-prefixer-keyframes');
 postcss([ prefix({prefix: 'myWebsite-'}) ])
 ```
 
