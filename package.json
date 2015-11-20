@@ -7,7 +7,7 @@
     "css",
     "postcss-plugin",
     "prefix",
-    "keyframes",
+    "keyframes"
   ],
   "author": "Michael Herbst <mherbst@vivid-planet.com>",
   "license": "MIT",
