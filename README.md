@@ -23,7 +23,6 @@ a {
   position: relative;
   animation: externalanimation 5s infinite;
 }
-
 ```
 
 ```css
