@@ -16,11 +16,17 @@ module.exports = postcss.plugin('postcss-prefixer-keyframes', function (opts) {
         });
 
         css.walkDecls(/animation/, function (decl) {
-            var animationName = decl.value.split(' ');
-            if (usedKeyframes.indexOf(animationName[0]) > -1) {
-                animationName[0] = String(prefix + animationName[0]);
-                decl.value = animationName.join(' ');
+            var animations = decl.value.split(',');
+
+            for (var i=0; i<animations.length; i++) {
+                var animationName = animations[i].trim().split(' ');
+                console.log(animationName[0]);
+                if (usedKeyframes.indexOf(animationName[0]) > -1) {
+                    animationName[0] = String(prefix + animationName[0]);
+                }
+                animations[i] = animationName.join(' ');
             }
+            decl.value = animations.join(',');
         });
     };
 });
