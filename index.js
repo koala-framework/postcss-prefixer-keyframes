@@ -20,7 +20,6 @@ module.exports = postcss.plugin('postcss-prefixer-keyframes', function (opts) {
 
             for (var i=0; i<animations.length; i++) {
                 var animationName = animations[i].trim().split(' ');
-                console.log(animationName[0]);
                 if (usedKeyframes.indexOf(animationName[0]) > -1) {
                     animationName[0] = String(prefix + animationName[0]);
                 }
