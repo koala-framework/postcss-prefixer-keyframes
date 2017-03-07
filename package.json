@@ -1,6 +1,6 @@
 {
   "name": "postcss-prefixer-keyframes",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "PostCSS plugin to prefix keyframes",
   "keywords": [
     "postcss",
